@@ -18,7 +18,17 @@ manufacturer_id TMTR
 mcu_id 003300293431510632313835
 signature 
 
+# feature
+feature -TELEMETRY
+feature GPS
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 1 1 115200 57600 0 115200
+serial 3 2 115200 57600 0 115200
+
 # master
+set acc_calibration = 22,43,67,1
 set osd_canvas_width = 30
 set osd_canvas_height = 13
 
