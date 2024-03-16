@@ -29,6 +29,7 @@ serial 3 2 115200 57600 0 115200
 
 # master
 set acc_calibration = 22,43,67,1
+set yaw_motors_reversed = ON
 set osd_canvas_width = 30
 set osd_canvas_height = 13
 
