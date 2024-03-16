@@ -47,12 +47,20 @@ rateprofile 0
 
 rateprofile 1
 
+# rateprofile 1
+set rateprofile_name = thb
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 10
+set roll_srate = 80
+set pitch_srate = 80
+
 rateprofile 2
 
 rateprofile 3
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 1
 
 # save configuration
 save
