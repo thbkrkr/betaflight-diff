@@ -26,6 +26,16 @@ serial 0 64 115200 57600 0 115200
 serial 1 1 115200 57600 0 115200
 serial 3 2 115200 57600 0 115200
 
+# map
+map TAER1234
+
+# aux
+aux 0 0 1 1700 2100 0 0
+aux 1 1 2 1300 1700 0 0
+aux 2 2 2 1700 2100 0 0
+aux 3 13 0 1700 2100 0 0
+aux 4 35 3 1700 2100 0 0
+
 # master
 set acc_calibration = 22,43,67,1
 set yaw_motors_reversed = ON
