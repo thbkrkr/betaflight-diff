@@ -19,7 +19,6 @@ mcu_id 003300293431510632313835
 signature 
 
 # feature
-feature -TELEMETRY
 feature GPS
 
 # serial
