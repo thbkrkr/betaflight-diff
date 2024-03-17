@@ -43,6 +43,7 @@ set acc_calibration = 22,43,67,1
 set dshot_bidir = ON
 set motor_poles = 12
 set yaw_motors_reversed = ON
+set small_angle = 180
 set osd_canvas_width = 30
 set osd_canvas_height = 13
 
