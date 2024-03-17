@@ -41,6 +41,7 @@ set dyn_notch_count = 1
 set dyn_notch_q = 500
 set acc_calibration = 22,43,67,1
 set dshot_bidir = ON
+set motor_poles = 12
 set yaw_motors_reversed = ON
 set osd_canvas_width = 30
 set osd_canvas_height = 13
