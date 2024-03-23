@@ -51,6 +51,23 @@ set osd_canvas_height = 13
 
 profile 0
 
+# profile 0
+set dterm_lpf2_static_hz = 0
+set p_pitch = 94
+set i_pitch = 168
+set d_pitch = 92
+set f_pitch = 250
+set p_roll = 90
+set i_roll = 160
+set d_roll = 80
+set f_roll = 240
+set p_yaw = 90
+set i_yaw = 160
+set f_yaw = 240
+set d_min_roll = 60
+set d_min_pitch = 68
+set simplified_master_multiplier = 200
+
 profile 1
 
 profile 2
