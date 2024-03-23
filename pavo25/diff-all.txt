@@ -1,0 +1,188 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.4.2 Jun  1 2023 / 02:55:53 (23d066d08) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name BETAFPVF722
+manufacturer_id BEFH
+mcu_id 002c00403133511636313534
+signature 
+
+# name: Pavo25 V2
+
+# resources
+resource LED_STRIP 1 NONE
+resource PINIO 1 A08
+
+# feature
+feature -TELEMETRY
+feature LED_STRIP
+
+# serial
+serial 1 131073 115200 57600 0 115200
+serial 2 0 115200 57600 0 115200
+serial 3 1024 115200 57600 0 115200
+serial 5 64 115200 57600 0 115200
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -ARMING_GPS_FIX
+beeper -GPS_STATUS
+beeper -RX_SET
+beeper -ACC_CALIBRATION
+beeper -READY_BEEP
+beeper -BLACKBOX_ERASE
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+
+# beacon
+beacon RX_SET
+
+# map
+map TAER1234
+
+# led
+led 0 12,12::C:1
+led 1 13,12::C:1
+led 2 14,12::C:1
+led 3 15,12::C:1
+led 4 12,13::C:1
+led 5 13,13::C:1
+led 6 14,13::C:1
+led 7 15,13::C:1
+led 8 12,14::C:1
+led 9 13,14::C:1
+led 10 14,14::C:1
+led 11 15,14::C:1
+led 12 12,15::C:1
+led 13 13,15::C:1
+led 14 14,15::C:1
+led 15 15,15::C:1
+
+# aux
+aux 0 0 1 1700 2100 0 0
+aux 1 1 2 1300 1700 0 0
+aux 2 13 0 1700 2100 0 0
+aux 3 35 2 1700 2100 0 0
+aux 4 40 3 1700 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set gyro_lpf1_dyn_min_hz = 0
+set acc_calibration = -8,22,-62,1
+set blackbox_device = NONE
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set motor_output_reordering = 2,3,0,1,4,5,6,7
+set ibata_scale = 205
+set ibata_offset = -800
+set small_angle = 180
+set osd_vbat_pos = 2561
+set osd_rssi_pos = 3183
+set osd_link_quality_pos = 3151
+set osd_rssi_dbm_pos = 3119
+set osd_tim_2_pos = 3663
+set osd_flymode_pos = 291
+set osd_throttle_pos = 3631
+set osd_current_pos = 2529
+set osd_mah_drawn_pos = 2625
+set osd_craft_name_pos = 602
+set osd_warnings_pos = 14935
+set osd_avg_cell_voltage_pos = 2593
+set osd_flip_arrow_pos = 2394
+set osd_stat_bitmask = 8402532
+set osd_displayport_device = MSP
+set debug_mode = GYRO_SCALED
+set vcd_video_system = HD
+set pinio_box = 40,255,255,255
+set gyro_1_sensor_align = CW270FLIP
+set gyro_1_align_pitch = 1800
+set gyro_1_align_yaw = 2700
+set craft_name = Pavo25 V2
+
+profile 0
+
+# profile 0
+set anti_gravity_gain = 150
+set p_pitch = 82
+set i_pitch = 124
+set d_pitch = 75
+set f_pitch = 0
+set p_roll = 63
+set i_roll = 95
+set d_roll = 55
+set f_roll = 0
+set p_yaw = 63
+set i_yaw = 95
+set f_yaw = 0
+set d_min_roll = 44
+set d_min_pitch = 59
+set d_max_gain = 25
+set feedforward_jitter_factor = 10
+set dyn_idle_min_rpm = 35
+set simplified_master_multiplier = 140
+set simplified_i_gain = 85
+set simplified_d_gain = 105
+set simplified_dmax_gain = 75
+set simplified_feedforward_gain = 0
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 125
+set tpa_rate = 70
+set tpa_breakpoint = 1300
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+# rateprofile 1
+set roll_rc_rate = 5
+set pitch_rc_rate = 5
+set yaw_rc_rate = 5
+set roll_expo = 45
+set pitch_expo = 45
+set yaw_expo = 45
+set roll_srate = 72
+set pitch_srate = 72
+set yaw_srate = 54
+
+rateprofile 2
+
+# rateprofile 2
+set roll_rc_rate = 8
+set pitch_rc_rate = 8
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 15
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 70
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 2
+
+# save configuration
+save
+# 
