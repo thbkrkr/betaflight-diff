@@ -21,11 +21,12 @@ signature
 # name: aos-lr5
 
 # feature
+feature -TELEMETRY
 feature GPS
 
 # serial
 serial 0 64 115200 57600 0 115200
-serial 1 1 115200 57600 0 115200
+serial 1 131073 115200 57600 0 115200
 serial 3 2 115200 57600 0 115200
 
 # map
