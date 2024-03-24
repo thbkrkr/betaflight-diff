@@ -18,6 +18,8 @@ manufacturer_id TMTR
 mcu_id 003300293431510632313835
 signature 
 
+# name: aos-lr5
+
 # feature
 feature GPS
 
@@ -71,6 +73,7 @@ set osd_rtc_date_time_pos = 8
 set osd_displayport_device = MSP
 set debug_mode = GYRO_SCALED
 set vcd_video_system = HD
+set craft_name = aos-lr5
 
 profile 0
 
