@@ -71,6 +71,7 @@ set acc_calibration = 19,-74,9,1
 set blackbox_sample_rate = 1/2
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
 set yaw_motors_reversed = ON
 set small_angle = 180
 set osd_cap_alarm = 1000
